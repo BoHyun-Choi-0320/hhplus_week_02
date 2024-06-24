@@ -2,9 +2,10 @@
 <hr>
 
 ## [기술스택]
-- Spring Boot
-- Java 17
-- H2 Database
+- Framework : Spring Boot
+- Java : 17
+- Database : H2 Database
+- build tool : gradle
 
 ## [요구사항]
 
@@ -50,6 +51,17 @@
     - `확장 가능한 엔티티 구조`를 고려했는지 ➡️ **강의와 각 강의별 날짜가 추가 가능한 구조의 DB구현**
       - 특강 테이블, 신청 히스토리 테이블에 대한 구조
       - 적절히 각 도메인에 대한 서비스의 책임이 분리되었는지(단일책임원칙)
+
+
+## [간단한 ERD]
+![img.png](img.png)
+ 
+
+- 테이블 목록
+  - Users(사용자 테이블)
+  - Lectures(강의 테이블)
+  - LecturesHistory(수강 신청 기록 테이블)
+
 
 
 
