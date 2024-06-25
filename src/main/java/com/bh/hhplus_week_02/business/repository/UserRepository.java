@@ -1,4 +1,4 @@
 package com.bh.hhplus_week_02.business.repository;
 
-public interface LecturesHistoryRepository {
+public interface UserRepository {
 }
