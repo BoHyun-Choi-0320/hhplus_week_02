@@ -8,4 +8,5 @@ import java.util.List;
 public interface LectureRepository {
     List<LectureDto> findAll();
     LectureDto findByLectureId(Long lectureId);
+
 }

@@ -18,7 +18,6 @@ public class LectureRepositoryImpl implements LectureRepository {
         this.lecturesJpaRepository = lecturesJpaRepository;
     }
 
-
     @Override
     public List<LectureDto> findAll() {
         List<Lecture> lectureList = lecturesJpaRepository.findAll();

@@ -9,7 +9,6 @@ import org.springframework.data.jpa.repository.Lock;
 
 public interface LectureHistoryJpaRepository extends JpaRepository<LectureHistory, Long> {
 
-    void save(LectureHistoryDto lectureHistoryDto);
     boolean existsByUserIdAndLectureId(Long userId, Long lectureId);
     @Lock(LockModeType.PESSIMISTIC_WRITE)
     int countLectureHistoryByLectureId(Long lectureId);
