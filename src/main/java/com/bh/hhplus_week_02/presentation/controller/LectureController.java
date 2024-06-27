@@ -3,7 +3,6 @@ package com.bh.hhplus_week_02.presentation.controller;
 import com.bh.hhplus_week_02.business.dto.LectureDto;
 import com.bh.hhplus_week_02.business.service.LectureHistoryService;
 import com.bh.hhplus_week_02.business.service.LectureService;
-import com.bh.hhplus_week_02.business.service.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
@@ -14,7 +13,6 @@ import java.util.List;
 @RequestMapping("/lectures")
 public class LectureController {
 
-    private final UserService userService;
     private final LectureService lectureService;
     private final LectureHistoryService lectureHistoryService;
 

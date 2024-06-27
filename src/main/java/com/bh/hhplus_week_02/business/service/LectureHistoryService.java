@@ -37,6 +37,12 @@ public class LectureHistoryService {
             throw new RuntimeException("수강 신청이 마감되었습니다.");
         }
 
+        boolean validate = lectureHistoryRepository.existsByUserIdAndLectureId(userId, lectureId);
+
+        if(validate){
+            throw new RuntimeException("이미 신청한 강의 입니다.");
+        }
+
         // 수강신청 정보 생성
         LectureHistoryDto lectureHistoryDto = new LectureHistoryDto(userId, lectureId);
 
