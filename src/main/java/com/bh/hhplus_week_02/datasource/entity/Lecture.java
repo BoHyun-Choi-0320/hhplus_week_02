@@ -1,13 +1,14 @@
 package com.bh.hhplus_week_02.datasource.entity;
 
 import jakarta.persistence.*;
-import org.springframework.data.annotation.CreatedDate;
+import lombok.Getter;
 
 import java.time.LocalDateTime;
 
 @Entity
-@Table(name="Lectures")
-public class Lectures {
+@Table(name="Lecture")
+@Getter
+public class Lecture {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name="lectureId")
